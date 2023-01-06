@@ -2255,6 +2255,27 @@ int main(int argc, char* argv[]) {
       deadzone_x = -300;
       strcpy(inputstr, "/dev/input/by-path/platform-odroidgo3-joypad-event-joystick");
     }
+	else if (strcmp(argv[2], "ogu") == 0) {
+      back_key = 704;
+      start_key = 705;
+      a_key = 305;
+      b_key = 304;
+      x_key = 307;
+      y_key = 308;
+      up_key = 544;
+      down_key = 545;
+      left_key = 546;
+      right_key = 547;
+      l1_key = 310;
+      l2_key = 312;
+      l3_key = 707;
+      r1_key = 311;
+      r2_key = 313;
+      r3_key = 708;
+      deadzone_y = 300;
+      deadzone_x = -300;
+      strcpy(inputstr, "/dev/input/by-path/platform-gou_joypad-event-joystick");
+    }
     else if (strcmp(argv[2], "chi") == 0) {
       back_key = 314;
       start_key = 315;
