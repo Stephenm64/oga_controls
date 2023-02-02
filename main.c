@@ -2257,7 +2257,7 @@ int main(int argc, char* argv[]) {
     }
 	else if (strcmp(argv[2], "ogu") == 0) {
       back_key = 704;
-      start_key = 705;
+      start_key = 709;
       a_key = 305;
       b_key = 304;
       x_key = 307;
@@ -2268,7 +2268,7 @@ int main(int argc, char* argv[]) {
       right_key = 547;
       l1_key = 310;
       l2_key = 312;
-      l3_key = 707;
+      l3_key = 705;
       r1_key = 311;
       r2_key = 313;
       r3_key = 708;
@@ -2484,6 +2484,9 @@ int main(int argc, char* argv[]) {
               handle_event_chi(ev_joypad.type, ev_joypad.code, ev_joypad.value);
            }
            else if (strcmp(argv[2], "ogs") == 0) {
+              handle_event_ogs(ev_joypad.type, ev_joypad.code, ev_joypad.value);
+           }
+		   else if (strcmp(argv[2], "ogu") == 0) {
               handle_event_ogs(ev_joypad.type, ev_joypad.code, ev_joypad.value);
            }
            else if (strcmp(argv[2], "rg552") == 0) {
